@@ -1,0 +1,5 @@
+mongodb_service_host = "127.0.0.1"
+mongodb_service_port = 27017
+mongodb_database = "demo"
+
+port = 8080

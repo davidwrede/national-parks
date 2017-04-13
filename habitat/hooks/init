@@ -1,0 +1,13 @@
+#!/bin/bash
+
+exec 2>&1
+
+# echo "Seeding Mongo Collection"
+
+# source {{pkg.svc_config_path}}/mongoimport-opts.conf
+
+ln -sf $(hab pkg path core/glibc)/lib/ld-2.22.so /lib/ld-linux-x86-64.so.2 2>/dev/null
+
+# $(hab pkg path core/mongo-tools)/bin/mongoimport --drop -d demo -c nationalparks --type json --jsonArray --file {{pkg.path}}/national-parks.json --host=$host --port=$port
+
+echo ${{sys.ip}}
